@@ -10,19 +10,31 @@
 
 <body>
 
+    <!-- Chat Section -->
     <div class="chat-container">
+        <!-- Default AI Welcome Message -->
         <div class="ai-chat-box">
-            <img src="./assets/chat.webp" alt="" id="aiImage" width="50">
+            <img src="./assets/chat.webp" alt="AI" class="chat-avatar" id="aiImage">
             <div class="ai-chat-area">
                 Hello ! How Can I Help Today?
             </div>
         </div>
     </div>
+
+    <!-- Input Section -->
     <div class="prompt-area">
         <input type="text" id="prompt" placeholder="Message...">
-        <button id="image"><img src="./assets/img.svg" alt="">
-        <input type="file" accept="images/*" hidden> </button>
-        <button id="submit"><img src="./assets/submit.svg" alt=""></button>
+
+        <!-- Image Upload Button -->
+        <button id="image">
+            <img src="./assets/img.svg" alt="Choose Image">
+            <input type="file" accept="image/*" hidden>
+        </button>
+
+        <!-- Send Button -->
+        <button id="submit">
+            <img src="./assets/submit.svg" alt="Send">
+        </button>
     </div>
 
     <script src="script.js"></script>
