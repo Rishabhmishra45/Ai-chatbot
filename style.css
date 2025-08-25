@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.chat-container {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(45, 52, 59);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    overflow: auto;
+}
+
+.user-chat-box {
+    width: 60%;
+    position: relative;
+    left: 40%;
+}
+
+.ai-chat-box {
+    width: 60%;
+    position: relative;
+}
+
+.user-chat-area {
+    width: 90%;
+    padding: 11px;
+    padding-left: 30px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.639);
+    border-radius: 40px 0px 40px 40px;
+    box-shadow: 2px 2px 10px black;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.chooseimg {
+    width: 15%;
+    border-radius: 25px;
+}
+
+.ai-chat-area {
+    width: 90%;
+    padding: 11px;
+    background-color: rgba(0, 0, 0, 0.361);
+    position: relative;
+    left: 10%;
+    color: rgba(255, 255, 255, 0.639);
+    border-radius: 0px 40px 40px 40px;
+    box-shadow: 2px 2px 10px black;
+}
+
+#userImage {
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+    filter: drop-shadow(2px 2px 10px black);
+    border-radius: 50%;
+    height: 65px;
+    width: 80px;
+}
+
+#aiImage {
+    position: absolute;
+    left: 0;
+    filter: drop-shadow(2px 2px 10px black);
+    border-radius: 50%;
+    height: 50px;
+    width: 65px;
+}
+
+.prompt-area {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(45, 52, 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.prompt-area input {
+    width: 50%;
+    height: 60px;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.prompt-area button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.prompt-area button:hover {
+    background-color: rgba(0, 0, 0, 0.338);
+}
+
+.load {
+    filter: drop-shadow(2px 2px 10px black);
+}
+
+.choose {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
