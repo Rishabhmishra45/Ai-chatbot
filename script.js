@@ -4,7 +4,8 @@ let imagebtn = document.querySelector("#image");
 let imageinput = document.querySelector("#image input");
 let image = document.querySelector("#image img");
 
-const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyA8d8NviV2ErsVCaIoxChd9xnhVHHAQQvM"
+
+const Api_Url = "/api/proxy";
 
 let user = {
     message: null,
