@@ -128,3 +128,17 @@ imageinput.addEventListener("change", () => {
 imagebtn.addEventListener("click", () => {
     imagebtn.querySelector("input").click();
 });
+
+
+
+// keyboard shortcut block karne ka code
+// document.onkeydown = function (e) {
+//     if (e.keyCode == 123) { // F12
+//         return false;
+//     }
+//     if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) ||
+//         e.keyCode == 'J'.charCodeAt(0) ||
+//         e.keyCode == 'C'.charCodeAt(0))) {
+//         return false;
+//     }
+// };
